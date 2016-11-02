@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">JuriDiario</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="numeroDoProcesso">Process number:</string>
+    <string name="edicao">Edition:</string>
+    <string name="numeroDaEdicao">Edition number:</string>
+    <string name="nomeAdvogado">Lawyer Name:</string>
+    <string name="descricaoPublicacao">Publication Description:</string>
+    <string name="meusProcessos">My Processes</string>
+    <string name="compartinhar">Share</string>
+    <string name="contato">Contact</string>
+    <string name="salvarMeusProcessos">Save in My Processes</string>
+
+</resources>

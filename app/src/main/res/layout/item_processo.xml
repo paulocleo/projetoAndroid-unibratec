@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4F4F4"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_view_list"
+        android:layout_weight="3"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_weight="6.5"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDescricaoProcessoItem"
+            android:text="@string/numeroDoProcesso"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/textNumeroProcessoItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Processo01"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_seta_direita"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

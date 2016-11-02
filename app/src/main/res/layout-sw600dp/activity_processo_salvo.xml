@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/meus_processos_topo"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/left_panel_proportion" />
+
+        <FrameLayout
+            android:id="@+id/detail_root"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/right_panel_proportion">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

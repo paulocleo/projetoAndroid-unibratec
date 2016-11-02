@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context="br.com.juridiario.DetalheActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/view_processo"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_plus"
+            android:id="@+id/btnSalvarProcesso"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/salvarMeusProcessos"
+            android:layout_marginTop="13dp"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="6"
+            android:background="@android:color/white"
+            android:id="@+id/conteudo_detalhe">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textDescricaoEdicao"
+                android:text="@string/edicao"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#666666"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textEdicao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/numeroDaEdicao"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textDescricaoNomeAdvogado"
+                android:text="@string/nomeAdvogado"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#666666"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textNomeAdvogado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome do Advogado"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textDescricaoProcesso"
+                android:text="@string/descricaoPublicacao"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#666666"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textDescProcesso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição do processo"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
